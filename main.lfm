@@ -1,0 +1,75 @@
+object fMain: TfMain
+  Left = 320
+  Height = 470
+  Top = 264
+  Width = 923
+  BorderStyle = bsDialog
+  Caption = 'Справочник комиксов'
+  ClientHeight = 470
+  ClientWidth = 923
+  Color = clSkyBlue
+  DesignTimePPI = 120
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '3.2.0.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 16
+    Top = 0
+    Width = 923
+    Align = alTop
+    Color = 14121252
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 0
+  end
+  object SG: TStringGrid
+    Left = 0
+    Height = 401
+    Top = 69
+    Width = 923
+    Align = alBottom
+    Color = clSkyBlue
+    ColCount = 6
+    FixedCols = 0
+    Font.Color = clCaptionText
+    GridLineColor = clMenu
+    ParentFont = False
+    RowCount = 1
+    TabOrder = 1
+    OnDblClick = bEditClick
+  end
+  object bAdd: TSpeedButton
+    Left = 21
+    Height = 37
+    Top = 24
+    Width = 209
+    Caption = 'Добавить '
+    OnClick = bAddClick
+  end
+  object bDel: TSpeedButton
+    Left = 459
+    Height = 37
+    Top = 24
+    Width = 209
+    Caption = 'Удалить комикс'
+    OnClick = bDelClick
+  end
+  object bEdit: TSpeedButton
+    Left = 240
+    Height = 37
+    Top = 24
+    Width = 209
+    Caption = 'Редактировать комикс'
+    OnClick = bEditClick
+  end
+  object bSort: TSpeedButton
+    Left = 678
+    Height = 37
+    Top = 24
+    Width = 209
+    Caption = 'Сортировать список'
+    OnClick = bSortClick
+  end
+end

@@ -1,0 +1,158 @@
+object fEdit: TfEdit
+  Left = 538
+  Height = 499
+  Top = 205
+  Width = 443
+  BorderStyle = bsDialog
+  Caption = 'Редактор информации о комиксе:'
+  ClientHeight = 499
+  ClientWidth = 443
+  Color = clSkyBlue
+  DesignTimePPI = 120
+  OnShow = FormShow
+  Position = poMainFormCenter
+  LCLVersion = '3.2.0.0'
+  object Lname: TLabel
+    Left = 8
+    Height = 20
+    Top = 32
+    Width = 250
+    Caption = 'Укажите название комикса (манги):'
+    ParentColor = False
+  end
+  object eName: TEdit
+    Left = 8
+    Height = 28
+    Top = 57
+    Width = 318
+    TabOrder = 0
+  end
+  object Lcountry: TLabel
+    Left = 8
+    Height = 20
+    Top = 99
+    Width = 212
+    Caption = 'Укажите страну производства:'
+    ParentColor = False
+  end
+  object eCountry: TEdit
+    Left = 8
+    Height = 28
+    Top = 124
+    Width = 318
+    TabOrder = 1
+  end
+  object LJanr: TLabel
+    Left = 8
+    Height = 20
+    Top = 299
+    Width = 113
+    Caption = 'Выберите жанр:'
+    ParentColor = False
+  end
+  object CBNote: TComboBox
+    Left = 8
+    Height = 28
+    Top = 325
+    Width = 318
+    ItemHeight = 20
+    ItemIndex = 0
+    Items.Strings = (
+      'Экшен'
+      'Приключения'
+      'Боевик'
+      'Фентази'
+      'Ужасы'
+      'История'
+      'Научная фантастика'
+    )
+    TabOrder = 2
+    Text = 'Экшен'
+  end
+  object bSave: TBitBtn
+    Left = 80
+    Height = 38
+    Top = 448
+    Width = 167
+    Caption = 'Сохранить данные'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    TabOrder = 3
+  end
+  object bCancel: TBitBtn
+    Left = 248
+    Height = 38
+    Top = 448
+    Width = 167
+    Cancel = True
+    Caption = 'Не сохранять'
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 4
+  end
+  object YkGod: TLabel
+    Left = 8
+    Height = 20
+    Top = 166
+    Width = 157
+    Caption = 'Укажите год создания:'
+    ParentColor = False
+  end
+  object eGod: TEdit
+    Left = 8
+    Height = 28
+    Top = 191
+    Width = 318
+    TabOrder = 5
+    OnKeyPress = eGodKeyPress
+  end
+  object CBSmotr: TComboBox
+    Left = 8
+    Height = 28
+    Top = 391
+    Width = 318
+    ItemHeight = 20
+    ItemIndex = 0
+    Items.Strings = (
+      'Да'
+      'Нет'
+    )
+    TabOrder = 6
+    Text = 'Да'
+  end
+  object LRegh: TLabel
+    Left = 8
+    Height = 20
+    Top = 233
+    Width = 115
+    Caption = 'Укажите Автора:'
+    ParentColor = False
+  end
+  object Regh: TEdit
+    Left = 8
+    Height = 28
+    Top = 258
+    Width = 318
+    TabOrder = 7
+  end
+  object LSmotr1: TLabel
+    Left = 8
+    Height = 20
+    Top = 368
+    Width = 171
+    Caption = 'Комикс экранизирован?'
+    ParentColor = False
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 24
+    Top = 0
+    Width = 443
+    Align = alTop
+    Color = 14121252
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 8
+  end
+end
